@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #191919;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-oswald), 'Oswald', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+    margin: 0;
+    color: #191919;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    margin: 0;
+    font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+    color: #191919;
+  }
+
+  button {
+    font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+  }
+
+  input,
+  textarea,
+  select {
+    font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+  }
+
+  /* Ensure all text elements use Open Sans by default */
+  span,
+  div,
+  a,
+  li,
+  td,
+  th {
+    font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Font family utilities */
+  .font-sans {
+    font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+  }
+
+  .font-heading {
+    font-family: var(--font-oswald), 'Oswald', sans-serif;
+  }
+
+  /* Text color utilities */
+  .text-text-primary {
+    color: #191919;
+  }
+
+  .text-text-secondary {
+    color: #4c4c4c;
+  }
+
+  .text-text-muted {
+    color: #7f7f7f;
+  }
+
+  .text-text-inverse {
+    color: #ffffff;
+  }
+}
